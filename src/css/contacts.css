@@ -158,12 +158,15 @@
         flex-direction: row-reverse;
     }
 
+    .contacts-info {
+        flex-basis: calc((100% - 32px) / 2);
+    }
+
     .contacts-form {
         flex-basis: calc((100% - 32px) / 2);
     }
 
     .contacts-list {
-        flex-basis: calc((100% - 32px) / 2);
         flex-wrap: wrap;
         gap: 32px;
     }
