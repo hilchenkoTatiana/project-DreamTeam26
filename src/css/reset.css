@@ -24,9 +24,14 @@ a {
 }
 
 button {
+  padding: 0;
+  border: 1px solid transparent;
+  background-color: transparent;
   cursor: pointer;
 }
-
+address {
+  font-style: normal;
+}
 img {
   display: block;
   max-width: 100%;
