@@ -1,0 +1,35 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;    
+    z-index: 9999;
+    padding-top: 2px;
+}
+
+.mob-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin-bottom: 16px;
+    padding-block: 12px;    
+}
+
+.mob-nav {
+    margin-bottom: 64px;
+}
+
+.mob-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;    
+}
+
+.order-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    border: none;
+    width: 100%;
+}
