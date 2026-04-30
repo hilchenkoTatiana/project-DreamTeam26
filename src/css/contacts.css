@@ -58,6 +58,83 @@
     gap: 24px;
 }
 
+.contacts-label {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.contacts-input {
+    width: 335px;
+    height: 40px;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding-block: 8px;
+    padding-inline: 12px;
+    transition: border-color 0.3s linear;
+}
+
+.contacts-textarea {
+    width: 335px;
+    height: 212px;
+    margin-top: 8px;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding-block: 12px;
+    padding-inline: 12px;
+    transition: border-color 0.3s linear;
+}
+
+.text-invalid {
+    display: none;
+    margin-top: 8px;
+    line-height: 1.5;
+    color: #8c0000;
+    font-size: 12px;
+}
+
+.contacts-input::placeholder, .contacts-textarea::placeholder {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.contacts-input:focus, .contacts-textarea:focus, .contacts-input:hover, .contacts-textarea:hover, .contacts-input:active, .contacts-textarea:active {
+    outline: none;
+    border: 1px solid #ccc16e;
+}
+
+.contacts-input::placeholder, .contacts-textarea::placeholder {
+    transition: color 0.3s linear;
+}
+
+.contacts-input:focus::placeholder, .contacts-textarea:focus::placeholder {
+    color: transparent;
+}
+
+.contacts-input:not(:placeholder-shown):invalid, .contacts-textarea:not(:placeholder-shown):invalid {
+    border-color: #8c0000;
+    color: #8c0000;
+}
+
+.contacts-input:not(:placeholder-shown):invalid ~ .text-invalid, .contacts-textarea:not(:placeholder-shown):invalid ~ .text-invalid {
+    display: block;
+}
+
+.contacts-button {
+    width: 120px;
+    height: 40px;
+}
+
 @media screen and (min-width: 768px) {
 }
 /* Styles for Desktop devices */

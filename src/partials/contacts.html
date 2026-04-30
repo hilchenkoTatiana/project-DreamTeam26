@@ -1,4 +1,4 @@
-<section class="contacts" id="contacts">
+<section class="section contacts" id="contacts">
     <div class="container">
         <div class="contacts-header">
             <p class="contacts-before-title">Connect</p>
@@ -12,37 +12,40 @@
                         <use href="/img/sprite-optimization.svg#envelope"></use>
                     </svg>
                     <p class="contacts-text">Email</p>
-                    <a href="mailto:info@handmadejewelry.com" class="contacts-link">info@handmadejewelry.com</a>
+                    <a href="mailto:info@handmadejewelry.com" rel="noopener noreferer" target="_blank" class="contacts-link">info@handmadejewelry.com</a>
                 </li>
                 <li class="contacts-item">
                     <svg class="contacts-icon" width="32" height="32">
                         <use href="/img/sprite-optimization.svg#phone"></use>
                     </svg>
                     <p class="contacts-text">Phone</p>
-                    <a href="tel:+1234567890" class="contacts-link">+1 (555) 000-0000</a>
+                    <a href="tel:+1234567890"  rel="noopener noreferer" target="_blank" class="contacts-link">+1 (555) 000-0000</a>
                 </li>
                 <li class="contacts-item">
                     <svg class="contacts-icon" width="32" height="32">
                         <use href="/img/sprite-optimization.svg#map"></use>
                     </svg>
                     <p class="contacts-text">Office</p>
-                    <a href="#" class="contacts-link">76-8 Oakington Manor Dr, London, UK</a>
+                    <a href="#" rel="noopener noreferer" target="_blank" class="contacts-link">76-8 Oakington Manor Dr, London, UK</a>
                 </li>
             </ul>
             <form class="contacts-form">
                 <div class="contacts-form-input-group">
                     <label for="name" class="contacts-label">Name*</label>
-                    <input type="text" id="name" class="contacts-input" required>
+                    <input type="text" id="name" class="contacts-input" placeholder="Tony" pattern="^[a-zA-Z\s\.]{5,28}$" required />
+                    <p class="text-invalid">Please enter a valid name.</p>
                 </div>
                 <div class="contacts-form-input-group">
                     <label for="tel" class="contacts-label">Phone*</label>
-                    <input type="tel" id="tel" class="contacts-input" required>
+                    <input type="tel" id="tel" class="contacts-input" placeholder="+1 234 123 23" pattern="^\+[0-9\s]{10,14}$" required />
+                    <p class="text-invalid">Please enter a valid phone number.</p>
                 </div>
                 <div class="contacts-form-input-group">
                     <label for="message" class="contacts-label">Describe what you want</label>
-                    <textarea id="message" class="contacts-textarea"></textarea>
+                    <textarea id="message" class="contacts-textarea" placeholder="Type your message..." maxlength="500"></textarea>
+                    <p class="text-invalid">Please enter a valid message.</p>
                 </div>
-                <button type="submit" class="contacts-button">Submit</button>
+                <button type="submit" class="btn contacts-button">Submit</button>
             </form>
         </div>
     </div>
