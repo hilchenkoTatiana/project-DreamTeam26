@@ -2,19 +2,16 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    color: #000;
 }
 
 .contacts-title {
     margin-top: 16px;
-    color: #000;
 }
 
 .contacts-after-title {
     margin-top: 24px;
     font-size: 18px;
     line-height: 1.5;
-    color: #000;
 }
 
 .contacts-content {
@@ -40,7 +37,6 @@
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: -0.01em;
-    color: #000;
 }
 
 .contacts-link {
@@ -50,7 +46,6 @@
     line-height: 1.5;
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: #000;
     max-width: fit-content;
 }
 
@@ -64,7 +59,6 @@
     display: block;
     font-size: 16px;
     line-height: 1.5;
-    color: #000;
 }
 
 .contacts-input {
@@ -108,19 +102,16 @@
     font-size: 16px;
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.6);
-}
-
-.contacts-input:focus, .contacts-textarea:focus, .contacts-input:hover, .contacts-textarea:hover, .contacts-input:active, .contacts-textarea:active {
-    outline: none;
-    border: 1px solid #ccc16e;
-}
-
-.contacts-input::placeholder, .contacts-textarea::placeholder {
     transition: color 0.3s linear;
 }
 
 .contacts-input:focus::placeholder, .contacts-textarea:focus::placeholder {
     color: transparent;
+}
+
+.contacts-input:focus, .contacts-textarea:focus, .contacts-input:hover, .contacts-textarea:hover, .contacts-input:active, .contacts-textarea:active {
+    outline: none;
+    border: 1px solid #ccc16e;
 }
 
 .contacts-input:not(:placeholder-shown):invalid, .contacts-textarea:not(:placeholder-shown):invalid {
@@ -134,7 +125,10 @@
 
 .contacts-button {
     width: 100%;
-    height: 40px;
+    padding-block: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -149,7 +143,8 @@
     }
 
     .contacts-button {
-        width: 249px;
+        width: fit-content;
+        padding-inline: 98px;
     }
 }
 /* Styles for Desktop devices */
@@ -177,6 +172,6 @@
     }
 
     .contacts-button {
-        width: 192px;
+        padding-inline: 70px;
     }
 }
