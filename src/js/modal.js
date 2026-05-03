@@ -4,7 +4,7 @@
 
     //Open menu
     hamburger.addEventListener('click', () => {
-        mobileMenu.classList.add('active');
+        mobileMenu.classList.add('is-open');
     });
 
     //Close menu
@@ -13,7 +13,7 @@
         const isLink = e.target.tagName === 'A';
 
         if (isCloseBtn || isLink) {            
-            mobileMenu.classList.remove('active');
+            mobileMenu.classList.remove('is-open');
         }
     });
 })();

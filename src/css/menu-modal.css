@@ -12,7 +12,7 @@
     display: none;
 }
 
-.mobile-menu.active {
+.mobile-menu.is-open {
     display: block;
 }
 
