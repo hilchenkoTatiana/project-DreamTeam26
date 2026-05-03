@@ -6,27 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 18px;    
 }
 
-.header-logo {
-    fill: #000000;
-    width: 160px;
-    height: 68px;
-}
-
-.header-nav {
-    display: none;
-}
-
-.header-mobile-menu-icon {
-    width: 24px;
-    height: 24px;
-    fill: #000000;
-}
-
-.header-order {
-    display: none;
+.header-logo, .header-mobile-menu-icon {
+    fill: currentColor;
 }
 
 .header-nav-list {
@@ -34,11 +17,19 @@
     gap: 16px;
 }
 
+.hidden {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
+    .header-container {
+        padding-block: 18px;
+    }
+
     .logo-nav-wrapper {
         display: flex;
         align-items: center;
-        gap: 48.5px;
+        gap: 49px;
     }
 
     .header-logo {
@@ -52,8 +43,7 @@
 
     .header-order {
         display: inline-block;
-        padding: 6px 18.5px;
-        border: none;
+        padding: 6px 19px;
     }
 
     .header-nav {

@@ -20,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 18px;
 }
 
 .mob-nav {
@@ -37,11 +36,8 @@
     display: inline-block;
     padding: 6px 12px;    
     width: 100%;
-    height: 36px;
 }
 
 .mobile-close-button-icon {
-    width: 24px;
-    height: 24px;
-    fill: #000000;
+    fill: currentColor;
 }
