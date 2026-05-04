@@ -1,15 +1,31 @@
 <section class="about" id="about-us">
   <div class="container">
     <div class="about-wrapper">
-      <img
-        scr="/img/about/aboutImgMob.png"
-        srcset="/img/about/aboutImgMob.png 1x, /img/about/aboutImg@2xMob.png 2x"
-        alt="Jeweler polishing a ring"
-        width="335"
-        height="335"
-        class="about-image"
-        loading="lazy"
-      />
+      <picture class="about-picture">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/about/aboutImg@Desktop.png   1x,
+            /img/about/aboutImg@2xDesktop.png 2x
+          " />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/about/aboutImgTablet.png    1x,
+            /img/about/aboutImg@2xTablet.png 2x
+          " />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/about/aboutImgMob.png    1x,
+            /img/about/aboutImg@2xMob.png 2x
+          " />
+        <img
+          src="/img/about/aboutImg@Desktop.png"
+          alt="Jeweler polishing a ring"
+          width="704"
+          class="about-image"
+      /></picture>
       <div class="about-content">
         <h2 class="about-title">The Artistry Behind Handmade Jewelry</h2>
         <p class="about-text">
