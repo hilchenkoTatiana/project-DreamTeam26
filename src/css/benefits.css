@@ -14,32 +14,22 @@
 .benefits-item {
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 32px 12px;
-  width: 335px;
-  max-height: 218px;
+  width: 100%;
   background: #f2f2f2;
 }
 
 .benefits-subtitle {
   text-align: center;
   margin-bottom: 24px;
-  font-size: 24px;
-  line-height: 1.4;
   letter-spacing: -0.01em;
-  color: #000;
 }
 
 .benefits-item-text {
   font-size: 16px;
-  line-height: 1.5;
   text-align: center;
-  color: #000;
 }
 
 @media screen and (min-width: 768px) {
-  .benefits-item {
-    width: 704px;
-    height: 170px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -52,7 +42,6 @@
   }
 
   .benefits-item {
-    height: 194px;
     width: calc((100% - 32px * 2) / 3);
   }
 }
