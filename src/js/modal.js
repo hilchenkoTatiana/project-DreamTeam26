@@ -8,7 +8,7 @@
     });
 
     //Close menu
-    mobileMenu.addEventListener('click', function(e) {
+    mobileMenu.addEventListener('click', (e) => {
         const isCloseBtn = e.target.closest('#mobile-close-button');
         const isLink = e.target.tagName === 'A';
 
