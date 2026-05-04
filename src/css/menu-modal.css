@@ -41,3 +41,12 @@
 .mobile-close-button-icon {
     fill: currentColor;
 }
+
+.nav-wrapper {
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+
+.mob-header a {
+    line-height: 0;
+}
