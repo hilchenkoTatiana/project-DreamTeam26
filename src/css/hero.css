@@ -1,5 +1,5 @@
 .hero{
-    background-image: url(../img/hero/HeroMob.png);
+    background-image: url(/img/hero/HeroMob.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -8,13 +8,13 @@
 }
 @media only screen and (min-width:768px) {
     .hero{
-        background-image: url(../img/hero/HeroTablet.png); 
+        background-image: url(/img/hero/HeroTablet.png); 
         padding-bottom: 435px;
     }
 }
 @media only screen and (min-width:1440px) {
     .hero{
-        background-image: url(../img/hero/HeroTablet.png); 
+        background-image: url(/img/hero/HeroDesktop.png); 
         padding-bottom: 360px;
     }
 }
