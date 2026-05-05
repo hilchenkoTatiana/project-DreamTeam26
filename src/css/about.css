@@ -1,0 +1,86 @@
+section {
+  padding: 56px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 112px 0;
+  }
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .about-wrapper {
+    flex-direction: row;
+  }
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .about-image {
+    height: 456px;
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  .about-content {
+    max-width: 640px;
+  }
+}
+
+.about-text {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.about-item::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-item:nth-child(1)::before {
+  background-image: url(/img/about-icons/leaf.svg);
+}
+
+.about-item:nth-child(2)::before {
+  background-image: url(/img/about-icons/donate.svg);
+}
+
+.about-item:nth-child(3)::before {
+  background-image: url(/img/about-icons/book.svg);
+}

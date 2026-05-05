@@ -1,0 +1,19 @@
+(function() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const hamburger = document.querySelector('#hamburger');
+
+    //Open menu
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.add('is-open');
+    });
+
+    //Close menu
+    mobileMenu.addEventListener('click', (e) => {
+        const isCloseBtn = e.target.closest('#mobile-close-button');
+        const isLink = e.target.tagName === 'A';
+
+        if (isCloseBtn || isLink) {            
+            mobileMenu.classList.remove('is-open');
+        }
+    });
+})();
