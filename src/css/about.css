@@ -1,9 +1,9 @@
-section {
+.about {
   padding: 56px 0;
 }
 
 @media screen and (min-width: 768px) {
-  .section {
+  .about {
     padding: 112px 0;
   }
 }

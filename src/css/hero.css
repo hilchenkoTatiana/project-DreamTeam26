@@ -16,6 +16,7 @@
 @media only screen and (min-width:1440px) {
     .hero{
         background-image: url(/img/hero/HeroDesktop.webp); 
+        padding-top: 224px;
         padding-bottom: 360px;
     }
 }
