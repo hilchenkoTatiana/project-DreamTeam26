@@ -28,11 +28,11 @@
 
 @media screen and (min-width: 768px) {
 
-    /* .header-container {
-        padding-block: 18px;
-    } */
     .header-nav {
-        padding-block: 24px;
+        padding-block: 18px;
+    }
+    .logo-nav-wrapper .logo {
+        padding-block: 6px;
     }
 
     .logo-nav-wrapper {
